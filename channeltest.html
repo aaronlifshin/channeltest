@@ -1,0 +1,29 @@
+<link href="/static/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="/static/css/new.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="/_ah/channel/jsapi"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.0.min.js" ></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/js/channeltest.js"></script>
+
+
+<div class="container" id="mainContainer">
+  <div class="row">
+    <a class="dropdown-toggle" data-toggle="dropdown">
+      <div id="notifications" class="pull-right">                    
+        <img id="notificationIcon" src="/static/img/notificationIcon.png"/>                    
+        <div id="notificationCount" class="hide">0</div>
+      </div>          
+      </a>                           
+      <ul class="span4 dropdown-menu notification-menu pull-right" role="menu" aria-labelledby="dropdownMenu">
+         <li id="notificationMenuHeader" class="Heading_GreyMid_Caps">MESSAGES</li>                
+      </ul>
+  </div>
+  <div id="topRow" class="row">
+    Hello World. Waiting for notification. Page Title is {{title}}.
+    Navigate to <a href=/{{title}}_n>next</a>
+  </div>
+</div>
+
+<script> 
+      var channelToken = '{{token}}'; 
+</script>
